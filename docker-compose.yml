@@ -1,0 +1,42 @@
+version: '2'
+services:
+    postgres:
+      image: postgres:9.5
+      restart: unless-stopped
+      #add environment run
+      environment:
+       - "POSTGRES_USER=${POSTGRES_USER}"
+       - "POSTGRES_PASSWORD=${POSTGRES_PASSWORD}"
+       - "POSTGRES_DB=gogs"
+      volumes:
+       - "db-data:/var/lib/postgresql/data"
+      networks:
+       - gogs
+    gogs:
+      image: gogs/gogs:latest
+      #parametro utilizado para se obter a conexao com banco de dados via link_name
+      dns_search: .
+      restart: unless-stopped
+      ports:
+       - "10022:22"
+       - "3000:3000"
+      links:
+       - postgres
+      environment:
+       - "RUN_CROND=true"
+      networks:
+       - gogs
+      volumes:
+       - "gogs-data:/data"
+      depends_on:
+       - postgres
+
+networks:
+    gogs:
+      driver: bridge
+
+volumes:
+    db-data:
+      driver: local
+    gogs-data:
+      driver: local
