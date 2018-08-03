@@ -7,7 +7,7 @@
 </br> git clone https://github.com/smsantana/docker-gogs.git
 </br> cd docker-gogs
 </br> docker-compose up -d
-</br>
+</br> </br>
 Pagina de Configuracao Inicial:
 </br>
 http://localhost:3000
