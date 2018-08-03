@@ -3,15 +3,23 @@
 ![alt text](https://raw.githubusercontent.com/smsantana/docker-gogs/master/img/Gogs_home.jpg)
 
 </br>
-</br> Para Utilizar a Ferramenta Basta Seguir os Passos Abaixo:
+</br> 
+### Para Utilizar a Ferramenta Basta Seguir os Passos Abaixo:
+```
 </br> git clone https://github.com/smsantana/docker-gogs.git
 </br> cd docker-gogs
 </br> docker-compose up -d
+```
 </br> </br>
-Pagina de Configuracao Inicial:
+### Pagina de Configuracao Inicial:
 </br>
 http://localhost:3000
 </br>
+```
+host:postgres:5432
+user:postgres
+pass:postgres
+```
 </br>
 
 ![alt text](https://raw.githubusercontent.com/smsantana/docker-gogs/master/img/Instalacao_Gogs1.jpg)
