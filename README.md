@@ -1,7 +1,7 @@
 # docker-gogs
 
-![Image_Url](https://gogs.io/img/screenshots/1.png)
-https://gogs.io/img/screenshots/1.png
+![alt text](https://raw.githubusercontent.com/smsantana/docker-gogs/master/img/Gogs_home.jpg)
+
 </br>
 </br> 
 </br> git clone https://github.com/smsantana/docker-gogs.git
