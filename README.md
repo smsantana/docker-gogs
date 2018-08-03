@@ -9,7 +9,9 @@
 </br> docker-compose up -d
 </br>
 Pagina de Configuracao Inicial:
-localhost:3000
+</br>
+http://localhost:3000
+</br>
 </br>
 
 ![alt text](https://raw.githubusercontent.com/smsantana/docker-gogs/master/img/Instalacao_Gogs1.jpg)
